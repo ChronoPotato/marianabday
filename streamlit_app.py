@@ -511,6 +511,66 @@ div[data-baseweb="notification"][kind="warning"] {
 }
 </style>
 """, unsafe_allow_html=True)
+st.markdown("""
+<style>
+/* ===== MOBILE & CONTRAST FIXES (overrides) ===== */
+
+/* 1) Make cards solid on mobile to avoid washed-out colors */
+@media (max-width: 768px) {
+  .progress-container,
+  .stats-card,
+  .question-card,
+  .completion-card {
+    background: #ffffff !important;
+    backdrop-filter: none !important;
+    border-color: rgba(0,0,0,0.08) !important;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.08) !important;
+  }
+}
+
+/* 2) Radio chips: readable by default, punchy when selected */
+.stRadio > div > label {
+  background: rgba(14, 165, 233, 0.10) !important;   /* light chip */
+  color: #0c4a6e !important;                          /* dark text */
+  border: 2px solid rgba(14, 165, 233, 0.35) !important;
+}
+
+.stRadio > div > label:hover {
+  background: rgba(14, 165, 233, 0.18) !important;
+  border-color: rgba(14, 165, 233, 0.55) !important;
+}
+
+/* Selected option (Streamlit puts aria-checked on the active label) */
+.stRadio > div > label[aria-checked="true"] {
+  background: #0284c7 !important;  /* strong teal */
+  color: #ffffff !important;        /* white text for contrast */
+  border-color: #0284c7 !important;
+}
+
+/* 3) Hint expander: fix purple-on-purple */
+.streamlit-expanderHeader {
+  background: rgba(139, 92, 246, 1) !important;  /* keep your purple */
+  color: #ffffff !important;                     /* ensure readable text */
+}
+
+/* 4) Gradient-clipped text can look faint on some phones — solidize on mobile */
+@media (max-width: 768px) {
+  .stat-number,
+  .completion-title {
+    background: none !important;
+    -webkit-text-fill-color: currentColor !important;
+    color: #4f46e5 !important;  /* solid indigo */
+    text-shadow: none !important;
+  }
+}
+
+/* 5) Keep buttons high-contrast */
+.stButton > button { color: #ffffff !important; }
+
+/* 6) Progress track slightly darker for definition */
+.stProgress > div { background-color: rgba(99, 102, 241, 0.18) !important; }
+</style>
+""", unsafe_allow_html=True)
 
 # -------------------------------
 # Hero banner (looping video + title)
