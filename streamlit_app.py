@@ -509,6 +509,30 @@ div[data-baseweb="notification"][kind="warning"] {
     padding-top: 2rem;
     border-top: 1px solid rgba(139, 92, 246, 1);
 }
+            /* === HINT EXPANDER HEADER/BODY === */
+.streamlit-expanderHeader {
+  /* header bar of the expander */
+  background: #0ea5e9 !important;   /* <- change me */
+  color: #ffffff !important;         /* keep white for contrast */
+}
+.streamlit-expanderContent {
+  /* body area revealed when expanded */
+  background: #e0f2fe !important;    /* <- change me (light version of header) */
+}
+
+/* === HINT BOX INSIDE (st.info) === */
+div[data-baseweb="notification"][kind="info"] {
+  background: #2563eb !important;    /* <- change me (info box background) */
+  color: #ffffff !important;          /* text colour */
+  border: none !important;
+}
+
+/* === WRONG ANSWER BOX (st.error) === */
+div[data-baseweb="notification"][kind="negative"] {
+  background: #b91c1c !important;    /* <- change me (error box background) */
+  color: #ffffff !important;          /* text colour */
+  border: none !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
