@@ -424,19 +424,19 @@ html, body, [data-testid="stAppViewContainer"] {
 /* Success message */
 div[data-baseweb="notification"][kind="positive"] {
     background: linear-gradient(135deg, #10b981 100%, #059669 100%);
-    color: black;
+    color: white;
 }
 
 /* Error message */
 div[data-baseweb="notification"][kind="negative"] {
     background: linear-gradient(135deg, #ef4444 100%, #dc2626 100%);
-    color: black;
+    color: white;
 }
 
 /* Warning message */
 div[data-baseweb="notification"][kind="warning"] {
     background: linear-gradient(135deg, #f59e0b 100%, #d97706 100%);
-    color: black;
+    color: white;
 }
 
 /* Hint expander */
@@ -471,7 +471,7 @@ div[data-baseweb="notification"][kind="warning"] {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     font-weight: 900;
-    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    background: linear-gradient(135deg, #6366f1 100%, #8b5cf6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1.5rem;
