@@ -371,14 +371,14 @@ html, body, [data-testid="stAppViewContainer"] {
     font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #0284c7;
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
 .stRadio > div > label {
     font-family: 'Inter', sans-serif;
     font-size: 1.05rem;
-    color: #0c4a6e;
+    color: #ffffff;
     padding: 0.75rem 1.25rem;
     margin: 0.5rem 0;
     background: rgba(14, 165, 233, 1);
@@ -400,7 +400,7 @@ html, body, [data-testid="stAppViewContainer"] {
     font-weight: 600;
     padding: 0.875rem 2.5rem;
     background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 100px;
     box-shadow: 0 4px 20px rgba(14, 165, 233, 1);
@@ -424,19 +424,19 @@ html, body, [data-testid="stAppViewContainer"] {
 /* Success message */
 div[data-baseweb="notification"][kind="positive"] {
     background: linear-gradient(135deg, #10b981 100%, #6366f1 100%);
-    color: white;
+    color: #ffffff;
 }
 
 /* Error message */
 div[data-baseweb="notification"][kind="negative"] {
     background: linear-gradient(135deg, #ef4444 100%, #6366f1 100%);
-    color: white;
+    color: #ffffff;
 }
 
 /* Warning message */
 div[data-baseweb="notification"][kind="warning"] {
     background: linear-gradient(135deg, #f59e0b 100%, #6366f1 100%);
-    color: white;
+    color: #ffffff;
 }
 
 /* Hint expander */
@@ -444,7 +444,7 @@ div[data-baseweb="notification"][kind="warning"] {
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     font-weight: 600;
-    color: #7c3aed;
+    color: #ffffff;
     background: rgba(139, 92, 246, 1);
     border-radius: 8px;
     padding: 0.5rem 1rem;
@@ -481,7 +481,7 @@ div[data-baseweb="notification"][kind="warning"] {
     font-family: 'Inter', sans-serif;
     font-size: 1.25rem;
     line-height: 1.6;
-    color: #1e1b4b;
+    color: #ffffff;
     font-weight: 500;
 }
 
