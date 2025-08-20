@@ -381,7 +381,7 @@ html, body, [data-testid="stAppViewContainer"] {
     color: #0c4a6e;
     padding: 0.75rem 1.25rem;
     margin: 0.5rem 0;
-    background: rgba(14, 165, 233, 0.05);
+    background: rgba(14, 165, 233, 1);
     border: 2px solid transparent;
     border-radius: 12px;
     transition: all 0.3s ease;
