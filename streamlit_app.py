@@ -459,7 +459,7 @@ div[data-baseweb="notification"][kind="warning"] {
 
 /* Completion card */
 .completion-card {
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 1) 0%, rgba(139, 92, 246, 1) 100%);
     border: 2px solid rgba(99, 102, 241, 1);
     border-radius: 24px;
     padding: 3rem;
@@ -507,7 +507,7 @@ div[data-baseweb="notification"][kind="warning"] {
     font-size: 0.875rem;
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 1px solid rgba(139, 92, 246, 0.1);
+    border-top: 1px solid rgba(139, 92, 246, 1);
 }
 </style>
 """, unsafe_allow_html=True)
