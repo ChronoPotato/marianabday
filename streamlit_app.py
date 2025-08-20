@@ -445,7 +445,7 @@ div[data-baseweb="notification"][kind="warning"] {
     font-size: 0.95rem;
     font-weight: 600;
     color: #7c3aed;
-    background: rgba(139, 92, 246, 0.05);
+    background: rgba(139, 92, 246, 1);
     border-radius: 8px;
     padding: 0.5rem 1rem;
 }
