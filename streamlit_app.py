@@ -452,7 +452,7 @@ div[data-baseweb="notification"][kind="warning"] {
 
 .streamlit-expanderContent {
     font-family: 'Inter', sans-serif;
-    background: rgba(139, 92, 246, 0.03);
+    background: rgba(139, 92, 246, 1);
     border-radius: 0 0 8px 8px;
     padding: 1rem;
 }
