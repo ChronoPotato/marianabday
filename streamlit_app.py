@@ -459,7 +459,7 @@ div[data-baseweb="notification"][kind="warning"] {
 
 /* Completion card */
 .completion-card {
-    background: linear-gradient(135deg, rgba(99, 102, 241, 1) 100%, rgba(139, 92, 246, 1) 100%);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 1) 100%, rgba(1, 1, 1, 1) 100%);
     border: 2px solid rgba(99, 102, 241, 1);
     border-radius: 24px;
     padding: 3rem;
