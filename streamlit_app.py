@@ -399,7 +399,7 @@ html, body, [data-testid="stAppViewContainer"] {
     font-size: 1.1rem;
     font-weight: 600;
     padding: 0.875rem 2.5rem;
-    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
     color: white;
     border: none;
     border-radius: 100px;
@@ -423,19 +423,19 @@ html, body, [data-testid="stAppViewContainer"] {
 
 /* Success message */
 div[data-baseweb="notification"][kind="positive"] {
-    background: linear-gradient(135deg, #10b981 100%, #059669 100%);
+    background: linear-gradient(135deg, #10b981 100%, #6366f1 100%);
     color: white;
 }
 
 /* Error message */
 div[data-baseweb="notification"][kind="negative"] {
-    background: linear-gradient(135deg, #ef4444 100%, #dc2626 100%);
+    background: linear-gradient(135deg, #ef4444 100%, #6366f1 100%);
     color: white;
 }
 
 /* Warning message */
 div[data-baseweb="notification"][kind="warning"] {
-    background: linear-gradient(135deg, #f59e0b 100%, #d97706 100%);
+    background: linear-gradient(135deg, #f59e0b 100%, #6366f1 100%);
     color: white;
 }
 
@@ -459,7 +459,7 @@ div[data-baseweb="notification"][kind="warning"] {
 
 /* Completion card */
 .completion-card {
-    background: linear-gradient(135deg, rgba(99, 102, 241, 1) 0%, rgba(139, 92, 246, 1) 100%);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 1) 100%, rgba(139, 92, 246, 1) 100%);
     border: 2px solid rgba(99, 102, 241, 1);
     border-radius: 24px;
     padding: 3rem;
@@ -509,30 +509,7 @@ div[data-baseweb="notification"][kind="warning"] {
     padding-top: 2rem;
     border-top: 1px solid rgba(139, 92, 246, 1);
 }
-            /* === HINT EXPANDER HEADER/BODY === */
-.streamlit-expanderHeader {
-  /* header bar of the expander */
-  background: #0ea5e9 !important;   /* <- change me */
-  color: #ffffff !important;         /* keep white for contrast */
-}
-.streamlit-expanderContent {
-  /* body area revealed when expanded */
-  background: #e0f2fe !important;    /* <- change me (light version of header) */
-}
-
-/* === HINT BOX INSIDE (st.info) === */
-div[data-baseweb="notification"][kind="info"] {
-  background: #2563eb !important;    /* <- change me (info box background) */
-  color: #ffffff !important;          /* text colour */
-  border: none !important;
-}
-
-/* === WRONG ANSWER BOX (st.error) === */
-div[data-baseweb="notification"][kind="negative"] {
-  background: #b91c1c !important;    /* <- change me (error box background) */
-  color: #ffffff !important;          /* text colour */
-  border: none !important;
-}
+            
 </style>
 """, unsafe_allow_html=True)
 
