@@ -424,19 +424,19 @@ html, body, [data-testid="stAppViewContainer"] {
 /* Success message */
 div[data-baseweb="notification"][kind="positive"] {
     background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-    color: white;
+    color: black;
 }
 
 /* Error message */
 div[data-baseweb="notification"][kind="negative"] {
     background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-    color: white;
+    color: black;
 }
 
 /* Warning message */
 div[data-baseweb="notification"][kind="warning"] {
     background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-    color: white;
+    color: black;
 }
 
 /* Hint expander */
