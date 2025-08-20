@@ -403,7 +403,7 @@ html, body, [data-testid="stAppViewContainer"] {
     color: white;
     border: none;
     border-radius: 100px;
-    box-shadow: 0 4px 20px rgba(14, 165, 233, 0.3);
+    box-shadow: 0 4px 20px rgba(14, 165, 233, 1);
     transition: all 0.3s ease;
     width: 100%;
     margin-top: 1rem;
@@ -411,7 +411,7 @@ html, body, [data-testid="stAppViewContainer"] {
 
 .stButton > button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 30px rgba(14, 165, 233, 0.4);
+    box-shadow: 0 6px 30px rgba(14, 165, 233, 1);
 }
 
 /* Alert messages */
@@ -423,19 +423,19 @@ html, body, [data-testid="stAppViewContainer"] {
 
 /* Success message */
 div[data-baseweb="notification"][kind="positive"] {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #10b981 100%, #059669 100%);
     color: black;
 }
 
 /* Error message */
 div[data-baseweb="notification"][kind="negative"] {
-    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    background: linear-gradient(135deg, #ef4444 100%, #dc2626 100%);
     color: black;
 }
 
 /* Warning message */
 div[data-baseweb="notification"][kind="warning"] {
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #f59e0b 100%, #d97706 100%);
     color: black;
 }
 
@@ -460,11 +460,11 @@ div[data-baseweb="notification"][kind="warning"] {
 /* Completion card */
 .completion-card {
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
-    border: 2px solid rgba(99, 102, 241, 0.2);
+    border: 2px solid rgba(99, 102, 241, 1);
     border-radius: 24px;
     padding: 3rem;
     text-align: center;
-    box-shadow: 0 20px 60px rgba(99, 102, 241, 0.15);
+    box-shadow: 0 20px 60px rgba(99, 102, 241, 1);
 }
 
 .completion-title {
@@ -509,66 +509,6 @@ div[data-baseweb="notification"][kind="warning"] {
     padding-top: 2rem;
     border-top: 1px solid rgba(139, 92, 246, 0.1);
 }
-</style>
-""", unsafe_allow_html=True)
-st.markdown("""
-<style>
-/* ===== MOBILE & CONTRAST FIXES (overrides) ===== */
-
-/* 1) Make cards solid on mobile to avoid washed-out colors */
-@media (max-width: 768px) {
-  .progress-container,
-  .stats-card,
-  .question-card,
-  .completion-card {
-    background: #ffffff !important;
-    backdrop-filter: none !important;
-    border-color: rgba(0,0,0,0.08) !important;
-    box-shadow: 0 6px 28px rgba(0,0,0,0.08) !important;
-  }
-}
-
-/* 2) Radio chips: readable by default, punchy when selected */
-.stRadio > div > label {
-  background: rgba(14, 165, 233, 0.10) !important;   /* light chip */
-  color: #0c4a6e !important;                          /* dark text */
-  border: 2px solid rgba(14, 165, 233, 0.35) !important;
-}
-
-.stRadio > div > label:hover {
-  background: rgba(14, 165, 233, 0.18) !important;
-  border-color: rgba(14, 165, 233, 0.55) !important;
-}
-
-/* Selected option (Streamlit puts aria-checked on the active label) */
-.stRadio > div > label[aria-checked="true"] {
-  background: #0284c7 !important;  /* strong teal */
-  color: #ffffff !important;        /* white text for contrast */
-  border-color: #0284c7 !important;
-}
-
-/* 3) Hint expander: fix purple-on-purple */
-.streamlit-expanderHeader {
-  background: rgba(139, 92, 246, 1) !important;  /* keep your purple */
-  color: #ffffff !important;                     /* ensure readable text */
-}
-
-/* 4) Gradient-clipped text can look faint on some phones — solidize on mobile */
-@media (max-width: 768px) {
-  .stat-number,
-  .completion-title {
-    background: none !important;
-    -webkit-text-fill-color: currentColor !important;
-    color: #4f46e5 !important;  /* solid indigo */
-    text-shadow: none !important;
-  }
-}
-
-/* 5) Keep buttons high-contrast */
-.stButton > button { color: #ffffff !important; }
-
-/* 6) Progress track slightly darker for definition */
-.stProgress > div { background-color: rgba(99, 102, 241, 0.18) !important; }
 </style>
 """, unsafe_allow_html=True)
 
